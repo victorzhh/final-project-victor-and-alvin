@@ -1,18 +1,24 @@
-import Header from "./components/Header.jsx";
-import Footer from "./components/Footer.jsx";
-import Card from "./components/Card.jsx";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
-    <div>
-      <Header />
-      <main>
-        <h2>Welcome to our website!</h2>
-        <Card />
-      </main>
-      <Footer />
-    </div>
-  ) ;
+    <BrowserRouter>
+      <nav>
+        <Link to="/">Home</Link> |{" "}
+        <Link to="/about">About</Link> |{" "}
+        <Link to="/profile">Profile</Link>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
