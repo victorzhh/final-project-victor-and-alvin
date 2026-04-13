@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Card({ name, title, blurb, github, skills, quote }) {
+function Card({ name, title, blurb, github, skills, quote, children }) {
   const [showMore, setShowMore] = useState(false);
 
   return (
@@ -45,7 +45,9 @@ function Card({ name, title, blurb, github, skills, quote }) {
 
         </div>
       )}
-
+      
+      {children}
+  
     </div>
   );
 }
