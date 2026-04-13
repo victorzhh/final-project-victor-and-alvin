@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Profile from "./pages/Profile";
@@ -8,7 +8,7 @@ import LikeButton from "./components/LikeButton";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header />
     <div className="flex gap-6 justify-center flex-wrap p-6">
       <Card
@@ -40,7 +40,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
