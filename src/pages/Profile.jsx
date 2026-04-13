@@ -19,4 +19,4 @@ function Profile({cardEmoji,cardHeader,cardSubtitle,cardBlurb}) {
 };
 
 
-export default Profilecard;
+export default Profile;

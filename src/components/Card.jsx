@@ -1,15 +1,53 @@
-function Card() {
-    const title = "Homelessness";
-    const description = "It is bad";
-    const emoji = "😊"
+import { useState } from "react";
 
-    return (
-        <div className="text-2xl text-center text-shadow-lg">
-            <span className="bg-white hover bg-orange-200 shadow-med hover:shadow-xl transition-all duration-200">{emoji}</span>
-            <h3 className="bg-white hover:bg-blue-500 shadow-med hover:shadow-xl transition-all duration-200 underline text-blue-500 decoration-red-300 border-orange-600">{title}</h3>
-            <p className="bg-red-400 rounded-xl m-8 ">{description}</p>
+function Card({ name, title, blurb, github, skills, quote }) {
+  const [showMore, setShowMore] = useState(false);
+
+  return (
+    <div className="bg-white rounded-2xl shadow-md p-6 w-72 text-center hover:shadow-xl transition-all duration-200">
+      
+      <h3 className="text-xl font-bold text-gray-800">
+        {name}
+      </h3>
+
+      <p className="text-blue-500 font-semibold">{title}</p>
+      <p className="text-gray-500 mt-2">{blurb}</p>
+
+      <button
+        onClick={() => setShowMore(!showMore)}
+        className="mt-4 text-sm text-blue-500 hover:text-blue-700 font-semibold"
+      >
+        {showMore ? "▲ Show Less" : "▼ Show More"}
+      </button>
+
+      {showMore && (
+        <div className="mt-4 pt-4 border-t border-gray-200 text-left">
+          
+          {github && (
+            <p className="text-sm text-gray-600">
+              🔗<a href={github}
+                className="text-blue-500 hover:underline">
+                GitHub Repo</a>
+            </p>
+          )}
+          
+            {skills && (
+                <p className="text-sm text-gray-600 mt-2">
+                🔨 Skills: {skills}
+                </p>
+        )}
+
+               {quote && (
+                <p className="text-sm text-gray-600 mt-2">
+                🧠 Quote: {quote}
+                     </p>
+        )}
+
         </div>
-    ) ;
+      )}
+
+    </div>
+  );
 }
 
 export default Card;

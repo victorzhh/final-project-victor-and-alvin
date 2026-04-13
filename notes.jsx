@@ -11,8 +11,8 @@ function App() {
   return (
     <div>
     <Header />
+    <div className="flex gap-4 justify-center flex-wrap w-64">
     <Card />
-    <div className="text-center">
     <AboutUs
       myName="Victor"
       myTitle="Site Creator"
