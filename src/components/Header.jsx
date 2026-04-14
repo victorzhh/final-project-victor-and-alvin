@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
 const [isOpen, setIsOpen] = useState(false); 
@@ -19,10 +20,10 @@ className="text-2xl"
 {isOpen && (
 <nav className="mt-4">
 <ul className="flex flex-col gap-2">
-<li><a href="Home">Home</a></li>
-<li><a href="About">About Us</a></li>
-<li><a href="Database">Database</a></li>
-<li><a href="Contact">Contact</a></li>
+    <li><Link to="/">Home</Link></li>
+  <li><Link to="/About">About Us</Link></li>
+  <li><Link to="/Database">Database</Link></li>
+  <li><Link to="/Contact">Contact</Link></li>
 </ul>
 </nav>
 )}
