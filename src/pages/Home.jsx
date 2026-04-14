@@ -1,7 +1,6 @@
 function Home() {
   return (
     <>
-      {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-4">Homelessness is Bad</h1>
@@ -14,7 +13,6 @@ function Home() {
         </div>
       </div>
 
-      {/* Stats Section */}
       <div className="bg-gray-100 py-12 px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">The Reality</h2>
@@ -35,7 +33,6 @@ function Home() {
         </div>
       </div>
 
-      {/* Mission Section */}
       <div className="py-12 px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
