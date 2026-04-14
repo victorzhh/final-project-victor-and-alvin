@@ -19,10 +19,10 @@ className="text-2xl"
 {isOpen && (
 <nav className="mt-4">
 <ul className="flex flex-col gap-2">
-<li><a href="#">Home</a></li>
-<li><a href="#">About Us</a></li>
-<li><a href="#">Database</a></li>
-<li><a href="#">Contact</a></li>
+<li><a href="Home">Home</a></li>
+<li><a href="About">About Us</a></li>
+<li><a href="Database">Database</a></li>
+<li><a href="Contact">Contact</a></li>
 </ul>
 </nav>
 )}
