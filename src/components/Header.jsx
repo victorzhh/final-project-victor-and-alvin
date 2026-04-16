@@ -6,7 +6,7 @@ const [isOpen, setIsOpen] = useState(false);
 
 return (
 <header className="bg-gray-900 text-white px-6 py-4">
-<div Classname="flex justify-between items-center">
+<div className="flex justify-between items-center">
 <h1 className="text-xl font-bold">Homelessness is Bad</h1>
 
 <button
