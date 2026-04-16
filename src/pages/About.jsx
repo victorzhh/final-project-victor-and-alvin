@@ -1,10 +1,11 @@
 import Card from "../components/Card";
 import LikeButton from "../components/LikeButton";
+import Footer from "../components/Footer";
 
 function About() {
   return (
     <>
-      <h1>About Us</h1>
+    <h1 className="text-3xl font-bold mb-6 text-center">About Us</h1>
       <div className="flex gap-6 justify-center flex-wrap p-6">
         <Card
           name="Victor"
@@ -28,6 +29,15 @@ function About() {
           <LikeButton />
         </Card>
       </div>
+      <br></br><br></br>
+      <br></br><br></br>
+      <br></br><br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <Footer />
     </>
   );
 }
