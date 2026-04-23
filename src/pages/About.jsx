@@ -21,7 +21,7 @@ function About() {
         <Card
           name="Alvin"
           title="Developer"
-          blurb="My name is Alvin. When I play Valorant, Victor always carries me. I always rage and leave the game. Enjoy the website!"
+          blurb="My name is Alvin. I am a senior at Oakland Tech and I enjoy playing a variety of sports. Enjoy the website!"
           github="https://github.com/humanbeing8118"
           skills="Java, Python, Goofing Around"
           quote="Homeless exist because billionaires exist. Bridge the gap between the two and you will find balance. - Deborah Bravandt"
