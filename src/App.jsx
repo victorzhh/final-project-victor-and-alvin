@@ -1,23 +1,15 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Profile from "./pages/Profile";
-import Header from "./components/Header";
-import Database from "./pages/Database";
-import Contact from "./pages/Contact";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home'; // Adjust path if needed
+// Import other components as needed
 
 function App() {
   return (
-    <BrowserRouter>
-      <Header />
-       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/database" element={<Database />} />
-        <Route path="/contact" element={<Contact />} />
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} /> {/* Default route */}
+        {/* Add other routes here, e.g., <Route path="/about" element={<About />} /> */}
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
