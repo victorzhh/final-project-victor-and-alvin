@@ -1,13 +1,16 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
+
 function Header() {
-const [isOpen, setIsOpen] = useState(false); 
+const [isOpen, setIsOpen] = useState(false);
+
 
 return (
 <header className="bg-gray-900 text-white px-6 py-4">
 <div className="flex justify-between items-center">
 <h1 className="text-xl font-bold">Homelessness is Bad</h1>
+
 
 <button
 onClick={() => setIsOpen(!isOpen)}
@@ -16,6 +19,7 @@ className="text-2xl"
 {isOpen ? "x" : "☰"}
 </button>
 </div>
+
 
 {isOpen && (
 <nav className="mt-4">
@@ -30,5 +34,6 @@ className="text-2xl"
 </header>
 ) ;
 }
+
 
 export default Header;

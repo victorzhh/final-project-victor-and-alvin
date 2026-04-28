@@ -7,6 +7,7 @@ function Footer() {
         whiteSpace: "nowrap"
     };
 
+
     return (
         <footer style={footerStyle}>
             <span>&copy; 2026 Homelessness is Bad</span>
@@ -17,5 +18,6 @@ function Footer() {
         </footer>
     );
 }
+
 
 export default Footer;

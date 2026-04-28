@@ -33,13 +33,13 @@ function Card({ name, title, blurb, github, skills, quote, children }) {
           
             {skills && (
                 <p className="text-sm text-gray-600 mt-2">
-                🔨 Skills: {skills}
+                💪 Skills: {skills}
                 </p>
         )}
 
                {quote && (
                 <p className="text-sm text-gray-600 mt-2">
-                🧠 Quote: {quote}
+                💬 Quote: {quote}
                      </p>
         )}
 
